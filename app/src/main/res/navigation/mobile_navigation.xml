@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mobile_navigation"
+
+        app:startDestination="@+id/menu_ranking">
+
+    <fragment
+            android:id="@+id/menu_ranking"
+            android:name="com.example.project.ui.Ranking"
+            android:label="Ranking"
+            tools:layout="@layout/fragment_item_list" />
+
+    <fragment
+            android:id="@+id/menu_level1"
+            android:name="com.example.project.ui.Game"
+            android:label="Play a game"
+            tools:layout="@layout/fragment_game" />
+
+    <fragment
+            android:id="@+id/menu_logout"
+            android:name="com.example.project.ui.Logout"
+            android:label=""
+            tools:layout="@layout/fragment_logout" />
+
+
+</navigation>
